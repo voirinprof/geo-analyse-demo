@@ -19,6 +19,22 @@ Certaines lignes du CSV ont `LONGITUDE/LATITUDE` égales à `0/0` ou `1/1`. Les 
 | `scripts/03_matplotlib_map.py` | Carte GeoPandas/Matplotlib avec limites et échantillon de points |
 | `scripts/04_cartopy_map.py` | Fond Natural Earth, vue orthographique du globe centrée sur Montréal et encart détaillé avec Cartopy |
 
+## Exercice
+
+Le script `scripts/05_exercice_etudiants.py` est un squelette à compléter. Il réutilise les fichiers de données de ce dépôt et les notions des scripts précédents :
+
+1. Lire les colonnes utiles du CSV avec pandas.
+2. Convertir les dates et catégories, exclure les coordonnées hors de l'emprise montréalaise, puis créer les points en EPSG:4326.
+3. Lire les limites des PDQ avec pyogrio et vérifier la validité des géométries.
+4. Lire une emprise avec pyogrio, interroger l'index spatial pour le PDQ 4, réaliser une jointure spatiale et comparer le PDQ déclaré avec celui trouvé par géométrie.
+5. Cartographier les limites et un échantillon des crimes avec Matplotlib.
+
+Complétez les cinq fonctions `TODO`, puis lancez l'exercice depuis la racine du dépôt :
+
+```bash
+python scripts/05_exercice_etudiants.py
+```
+
 ## Installation avec conda
 
 Conda est recommandé pour réunir les dépendances Python et les bibliothèques géospatiales natives (GDAL/pyogrio, PROJ et Cartopy). Depuis la racine du dépôt :
