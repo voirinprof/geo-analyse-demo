@@ -1,0 +1,11 @@
+name: geo-analyse-demo
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pandas
+  - geopandas
+  - shapely>=2.0
+  - pyogrio
+  - matplotlib
+  - cartopy

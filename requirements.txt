@@ -1,0 +1,6 @@
+geopandas
+pandas
+shapely>=2.0
+pyogrio
+matplotlib
+cartopy
